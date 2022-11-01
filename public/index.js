@@ -49,7 +49,20 @@ var getWeather = function(data, city) {
     currentEl.append(uvEl);
 
 
-    
+    var fiveDays = data.daily.slice(1, 6);
+
+    fiveDay.innerHTML = null;
+    for (var day of fiveDays) {
+        console.log('DAY', day);
+        var humidity = day.humidity;
+        var wind = day.wind_speed;
+        var date = new Date(day.dt * 1000).toLocaleDateString();
+        var temp = day.temp.day;
+        var icon = day.weather[0].icon;
+      
+
+        
+      }
 }
 
 
