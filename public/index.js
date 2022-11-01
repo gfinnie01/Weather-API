@@ -26,6 +26,16 @@ var getWeather = function(data, city) {
   var imgE1 = document.createElement('img');
   var spanE1 = document.createElement('span');
   currentE1.innerHTML =null;
+
+  h2El.textContent = city.name;
+    tempEl.textContent = 'Temp: ' + temp
+    windEl.textContent = 'Wind: ' + wind
+    uvSpanEl.textContent = uv;
+    humidityEl.textContent = 'Humidity: ' + humidity;
+    uvEl.textContent = 'UVI: ';
+
+    
+
 }
 
 
