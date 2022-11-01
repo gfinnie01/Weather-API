@@ -34,7 +34,21 @@ var getWeather = function(data, city) {
     humidityEl.textContent = 'Humidity: ' + humidity;
     uvEl.textContent = 'UVI: ';
 
-    
+    imgEl.width = 90;
+    imgEl.src = "https://openweathermap.org/img/wn/" + icon + "@2x.png";
+    imgEl.height = 90;
+    imgEl.alt = icon;
+
+    uvEl.append(uvSpanEl);
+    currentEl.append(tempEl);
+    currentEl.append(dateEl);
+    currentEl.append(imgEl);
+    currentEl.append(h2El);
+    currentEl.append(humidityEl);
+    currentEl.append(windEl);
+    currentEl.append(uvEl);
+
+
 
 }
 
