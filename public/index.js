@@ -49,7 +49,9 @@ var getWeather = function(data, city) {
     currentEl.append(uvEl);
 
 
-
+    
 }
+
+
 
 
