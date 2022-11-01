@@ -9,11 +9,23 @@ var toJSON = function (response) {
   return response.json();
 };
 
-var displayWeather = function(data, city) {}
+var getWeather = function(data, city) {
 
-var temp = data.current.temp;
-var icon = data.current.weather[0].icon;
-var wind = data.current.wind_speed;
-var humidity = data.current.humidity;
-var uv = data.daily[0].uvi;
+  var temp = data.current.temp;
+  var icon = data.current.weather[0].icon;
+  var wind = data.current.wind_speed;
+  var humidity = data.current.humidity;
+  var uv = data.daily[0].uvi;
+
+  var h2E1 = document.createElement('h2');
+  var dateE1 = document.createElement('p');
+  var humidE1 = document.createElement('p');
+  var uvE1 = document.createElement('p');
+  var windE1 = document.createElement('p');
+  var tempE1 = document.createElement('p');
+  var imgE1 = document.createElement('img');
+  var spanE1 = document.createElement('span');
+  currentE1.innerHTML =null;
+}
+
 
